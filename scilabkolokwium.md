@@ -4,13 +4,16 @@
 ```scilab
  asin(0.01) + acos(0.01) + atan(0.01) + atan(1/0.01)
 
-
+```
 ####b
+```scilab
 a= [1,-2,3,2;2,3,6,6;1,-2,-4,8;8,3,-1,0]
 a'
 b = [2,6,-2,0;1,4,0,7;1,-2,4,8;8,-1,2,5]
 a'*b
+```
 ####c
+```scilab
 v = (sqrt(3)/12) * 28^2 * 15
 ####d
 function result = calculate_sum()
@@ -33,7 +36,9 @@ result_for_u_25 = calculate_sum();
 
 
 disp(result_for_u_25);
+```
 #zad2
+```scilab
 function y = f1(x)
     y = 3^(x + 4) + 4 * x;
 endfunction
@@ -55,7 +60,9 @@ xlabel('x');
 ylabel('y');
 legend('f = 3^{(x+4)} + 4x', 'f = (x^3 + 4x)/(x^2 + 5) + 5');
 grid on;
+```
 ##zad 3
+```scilab
 years = [2010, 2012, 2014, 2016, 2018];
 RMF_data = [33, 23, 43, 23, 44];
 Zet_data = [27, 12, 62, 12, 75];
