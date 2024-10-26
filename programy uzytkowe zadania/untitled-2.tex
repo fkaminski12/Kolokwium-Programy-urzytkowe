@@ -1,0 +1,104 @@
+\documentclass[a4paper, 12pt]{amsart}
+%\usepackage{amsmath}używa się w klasach, innych niż amsart
+\usepackage{amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[polish]{babel}
+\usepackage[T1]{fontenc}
+\author{Filip Kamiński}
+\title{Różny rzeczy matematyczny}
+\begin{document}
+\maketitle
+\section{Definiowanie poleceń}
+\newcommand{\A}{\mathfrak {A}}
+\renewcommand{\P}{\mathcal {P}}
+$\P$ ,$\A$
+\section{Operatory}
+
+Liczby zespolone są rozszerzeniem liczb rzeczywistych $\mathbb{R}$. Zbiór liczb
+zespolonych oznaczamy symbolemi  $\mathbb{C}$ .Każdą liczbę zespoloną z z można
+zapisać w postac
+\begin{center}
+$\ z = a + bi$.
+\end{center}
+
+Dla liczby $\ z = a + b$i definiuje się jej:\\
+\\
+część rzeczywistą re $z = a$ (inne oznaczenia: Re $z$,Re $z$),\\
+część urojoną jako im  $z = b$(inne oznaczenia: Im $z$,Im $z$).\\
+\\
+Dla liczb rzeczywistych oraz zespolonych $\| x\| = | x| = $ $a^{2} + b^{2} $.
+Pochodne cząstkowe funkcji f względem zmiennej $x$ oznacza się sym-\\bolami $\frac{\partial f}{\partial x}$ albo $\partial_x  f$
+
+\section{Srodowiska theorem, proof}
+\newtheorem{twierdzenie}{Twierdzenie}
+\theoremstyle{definicja}
+\newtheorem{definicja}{Definicja}
+W tekście:
+\begin{twierdzenie}[Wielkie twierdzenie Ferma]
+Dla liczby naturalnej $n>2$ nie istnieją takie liczby naturalne
+dodatnie $x,y,z $ które spełniałyby równanie
+\begin{equation}\label{my}
+x^{n}+y^{n}=z^{n}.
+\end{equation}
+\end{twierdzenie}
+\begin{proof}
+W rzeczywistości dowód twierdzenia Fermata przeprowadzony
+przez Wilesa ma dosyć długą historię.
+\end{proof}
+\begin{definicja}
+Liczby naturalne – liczby służące podawaniu liczności
+(trzy osoby, zob. liczebnik główny/kardynalny) i ustalania kolejności
+(trzecia osoba, zob. liczebnik porządkowy)
+\end{definicja}
+\begin{definicja}
+Trójka pitagorejska – trzy liczby naturalne x, y, z spełniające tzw. równanie Pitagorasa (1).
+\end{definicja}
+\section{Wzory na kilka wiersze}
+Środowisko $multiline$\\
+\begin{multline}
+|\psi_{1,2}|^2 = 1 + \frac{LC \lambda^2}{2} \pm i \sqrt{-LC \lambda^2 - \left( \frac{LC \lambda^2}{2} \right)^2} \\
+= \left( 1 + \frac{LC \lambda^2}{2} \right)^2 - LC \lambda^2 - \left( \frac{LC \lambda^2}{2} \right)^2 = 1.
+\end{multline}
+
+
+Środowisko $align$
+\begin{align}
+|\psi_{1,2}|^2 &=  1 + \frac{LC \lambda^2}{2} \pm i \sqrt{-LC \lambda^2 - \left( \frac{LC \lambda^2}{2} \right)^2} \tag{3}  \\
+&= \left( 1 + \frac{LC \lambda^2}{2} \right)^2 - LC \lambda^2 - \left( \frac{LC \lambda^2}{2} \right)^2 \tag{4} \\
+&= 1.
+\end{align}
+Środowisko $equation, split$
+\begin{equation}
+\begin{split}
+|\psi_{1,2}|^2 &= 1 + \frac{LC \lambda^2}{2} \pm i \sqrt{-LC \lambda^2 - \left( \frac{LC \lambda^2}{2} \right)^2} \\
+&= \left( 1 + \frac{LC \lambda^2}{2} \right)^2 - LC \lambda^2 - \left( \frac{LC \lambda^2}{2} \right)^2 \\
+&= 1.
+\end{split}
+\end{equation}
+Środowisko $gather$
+\begin{gather}
+|\psi_{1,2}|^2 = 1 + \frac{LC \lambda^2}{2} \pm i \sqrt{-LC \lambda^2 - \left( \frac{LC \lambda^2}{2} \right)^2} \tag{6} \\
+= \left( 1 + \frac{LC \lambda^2}{2} \right)^2 - LC \lambda^2 - \left( \frac{LC \lambda^2}{2} \right)^2 \tag{7} \\
+= 1.
+\end{gather}
+
+
+
+\section{Układy równań}
+\begin{equation}
+\begin{cases}
+x + y = 5, \\
+x - 2y = 8.
+\end{cases}
+\end{equation}
+Oraz
+\begin{equation}
+f(x) =
+\begin{cases}
+x + 5 & \text{for } x > 0, \\
+x^2 + x - 5 & \text{for } x \leq 0.
+\end{cases}
+\end{equation}
+
+\end{document}
+
